@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" width="1280" height="400" role="img" aria-label="merjong! singapore mahjong, but the computer plays">
+  <defs>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="4" fill="#ffffff" fill-opacity="0.18"/>
+      <circle cx="30" cy="30" r="4" fill="#ffffff" fill-opacity="0.18"/>
+    </pattern>
+    <!-- chunky cartoon tile, 110x140, with hard offset shadow -->
+    <g id="tile">
+      <rect x="9" y="12" width="110" height="140" rx="20" fill="#1d2b36"/>
+      <rect x="0" y="10" width="110" height="140" rx="20" fill="#2fa86b" stroke="#1d2b36" stroke-width="5"/>
+      <rect x="0" y="0" width="110" height="136" rx="20" fill="#fff8e7" stroke="#1d2b36" stroke-width="5"/>
+      <path d="M14 22 Q14 12 26 12 L50 12" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <path id="spark" d="M0 -18 Q3 -3 18 0 Q3 3 0 18 Q-3 3 -18 0 Q-3 -3 0 -18Z"/>
+  </defs>
+
+  <!-- background -->
+  <rect width="1280" height="400" fill="#38c27f"/>
+  <rect width="1280" height="400" fill="url(#dots)"/>
+
+  <!-- title -->
+  <g font-family="'Arial Rounded MT Bold', 'Trebuchet MS', 'Segoe UI', Arial, sans-serif" font-weight="900">
+    <text x="88" y="178" font-size="118" fill="#1d2b36" stroke="#1d2b36" stroke-width="14" stroke-linejoin="round">merjong!</text>
+    <text x="80" y="168" font-size="118" fill="#fff3c4" stroke="#1d2b36" stroke-width="12" stroke-linejoin="round" paint-order="stroke">merjong!</text>
+  </g>
+
+  <!-- subtitle sticker -->
+  <g transform="translate(92 214) rotate(-3)" font-family="'Trebuchet MS', 'Segoe UI', Arial, sans-serif" font-weight="700">
+    <rect x="6" y="7" width="486" height="58" rx="29" fill="#1d2b36"/>
+    <rect x="0" y="0" width="486" height="58" rx="29" fill="#ffffff" stroke="#1d2b36" stroke-width="5"/>
+    <text x="243" y="38" font-size="25" fill="#1d2b36" text-anchor="middle">singapore mahjong, but the bot plays</text>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#fff3c4" stroke="#1d2b36" stroke-width="3" stroke-linejoin="round">
+    <use href="#spark" transform="translate(600 70) scale(1.1)"/>
+    <use href="#spark" transform="translate(560 330) scale(0.8)"/>
+    <use href="#spark" transform="translate(1235 225) scale(0.7)"/>
+    <use href="#spark" transform="translate(56 330) scale(0.7)"/>
+  </g>
+
+  <!-- tiles -->
+  <g font-family="'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-weight="900" text-anchor="middle">
+    <!-- 中 -->
+    <g transform="translate(660 170) rotate(-12 55 70)">
+      <use href="#tile"/>
+      <text x="55" y="96" font-size="74" fill="#e8384f" stroke="#1d2b36" stroke-width="3" paint-order="stroke">中</text>
+    </g>
+    <!-- 發 -->
+    <g transform="translate(790 120) rotate(6 55 70)">
+      <use href="#tile"/>
+      <text x="55" y="96" font-size="70" fill="#1f9a5a" stroke="#1d2b36" stroke-width="3" paint-order="stroke">發</text>
+    </g>
+    <!-- 白 with a little face -->
+    <g transform="translate(920 175) rotate(-5 55 70)">
+      <use href="#tile"/>
+      <rect x="20" y="18" width="70" height="100" rx="10" fill="none" stroke="#3a7bd5" stroke-width="7"/>
+      <circle cx="42" cy="62" r="6" fill="#1d2b36"/>
+      <circle cx="68" cy="62" r="6" fill="#1d2b36"/>
+      <circle cx="44" cy="60" r="2" fill="#ffffff"/>
+      <circle cx="70" cy="60" r="2" fill="#ffffff"/>
+      <ellipse cx="34" cy="76" rx="7" ry="4" fill="#ff9db5"/>
+      <ellipse cx="76" cy="76" rx="7" ry="4" fill="#ff9db5"/>
+      <path d="M48 76 Q55 85 62 76" fill="none" stroke="#1d2b36" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- HUAT! burst -->
+  <g transform="translate(1110 92) rotate(10)">
+    <path d="M0 -62 L14 -34 L46 -46 L36 -16 L66 -2 L36 12 L46 44 L14 32 L0 62 L-14 32 L-46 44 L-36 12 L-66 -2 L-36 -16 L-46 -46 L-14 -34 Z"
+          fill="#1d2b36" transform="translate(5 6)"/>
+    <path d="M0 -62 L14 -34 L46 -46 L36 -16 L66 -2 L36 12 L46 44 L14 32 L0 62 L-14 32 L-46 44 L-36 12 L-66 -2 L-36 -16 L-46 -46 L-14 -34 Z"
+          fill="#ffd23f" stroke="#1d2b36" stroke-width="5" stroke-linejoin="round"/>
+    <text x="0" y="9" font-family="'Arial Rounded MT Bold', 'Trebuchet MS', Arial, sans-serif" font-weight="900" font-size="28" fill="#e8384f" text-anchor="middle">HUAT!</text>
+  </g>
+
+  <!-- cat peeking up from the bottom edge (SG animal tile nod) -->
+  <g transform="translate(1120 330)" stroke="#1d2b36" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M-62 -10 L-54 -78 L-14 -46 Z" fill="#ffa94d"/>
+    <path d="M62 -10 L54 -78 L14 -46 Z" fill="#ffa94d"/>
+    <path d="M-50 -24 L-48 -62 L-24 -42 Z" fill="#ff9db5" stroke-width="0"/>
+    <path d="M50 -24 L48 -62 L24 -42 Z" fill="#ff9db5" stroke-width="0"/>
+    <ellipse cx="0" cy="20" rx="78" ry="68" fill="#ffa94d"/>
+    <path d="M-20 -44 Q-14 -30 -8 -44 M20 -44 Q14 -30 8 -44" fill="none" stroke="#e8822a" stroke-width="5"/>
+    <path d="M-36 4 Q-28 -6 -20 4" fill="none"/>
+    <path d="M20 4 Q28 -6 36 4" fill="none"/>
+    <path d="M-6 16 L6 16 L0 23 Z" fill="#ff6f91" stroke-width="3"/>
+    <path d="M0 23 Q-8 33 -14 27 M0 23 Q8 33 14 27" fill="none" stroke-width="4"/>
+    <ellipse cx="-44" cy="24" rx="9" ry="5" fill="#ff9db5" stroke-width="0"/>
+    <ellipse cx="44" cy="24" rx="9" ry="5" fill="#ff9db5" stroke-width="0"/>
+    <path d="M-30 18 L-70 10 M-30 26 L-70 30 M30 18 L70 10 M30 26 L70 30" fill="none" stroke-width="3"/>
+  </g>
+</svg>
