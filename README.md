@@ -1,5 +1,8 @@
-# Merjong-singapore-rl-learning-
+![merjong](docs/assets/banner.svg)
 
+# merjong
+
+Mahjong for SG MJ.
 
 A reinforcement-learning agent for **Singapore Mahjong**, built from first principles:
 a fast multi-agent environment, a self-play PPO agent, and a statistically rigorous evaluation harness.
